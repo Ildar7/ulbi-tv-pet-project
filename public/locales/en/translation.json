@@ -8,5 +8,7 @@
   "Главная": "Main",
   "О сайте": "About us",
   "Кнопка": "Button",
-  "Страница не найдена": "404 PAGE NOT FOUND"
+  "Страница не найдена": "404 PAGE NOT FOUND",
+  "Произошла непредвиденная ошибка": "An unexpected error has occurred",
+  "Перезагрузить страницу": "Reload page"
 }
