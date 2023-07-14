@@ -1,6 +1,4 @@
-import { DeepPartial } from '@reduxjs/toolkit';
 import { StateSchema } from 'app/providers/StoreProvider';
-import loginForm from 'features/AuthByUsername/ui/LoginForm/LoginForm';
 import { getLoginError } from './getLoginError';
 
 describe('getLoginError.test', () => {
