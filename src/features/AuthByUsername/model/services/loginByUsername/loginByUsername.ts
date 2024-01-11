@@ -1,29 +1,36 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { AxiosInstance } from 'axios';
 import { USER_LOCALSTORAGE_KEY } from 'shared/const/localstorage';
 import { ThunkConfig } from 'app/providers/StoreProvider';
-import { User, userActions } from '../../../../../entities/User';
+import { User, userActions } from '../../../../../entities/User/index';
 
 interface LoginByUsernameProps {
     username: string;
     password: string;
 }
 
-export const loginByUsername = createAsyncThunk<User, LoginByUsernameProps, ThunkConfig<string>>(
+export const loginByUsername = createAsyncThunk<
+    User,
+    LoginByUsernameProps,
+    ThunkConfig<string>
+>(
     'login/loginByUsername',
-    async (authData, thunkAPI) => {
-        const { rejectWithValue, dispatch, extra } = thunkAPI;
+    async (authData, thunkApi) => {
+        const { extra, dispatch, rejectWithValue } = thunkApi;
 
         try {
             const response = await extra.api.post<User>('/login', authData);
 
-            if (!response.data) throw new Error();
+            if (!response.data) {
+                throw new Error();
+            }
 
             localStorage.setItem(USER_LOCALSTORAGE_KEY, JSON.stringify(response.data));
             dispatch(userActions.setAuthData(response.data));
             return response.data;
         } catch (e) {
             console.log(e);
-            return rejectWithValue('ERROR');
+            return rejectWithValue('error');
         }
     },
 );

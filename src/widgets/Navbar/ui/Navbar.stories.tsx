@@ -18,34 +18,15 @@ const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
 
 export const Light = Template.bind({});
 Light.args = {};
-Light.decorators = [
-    StoreDecorator({
-        user: { authData: undefined },
-    }),
-];
+Light.decorators = [StoreDecorator({
 
+})];
 export const Dark = Template.bind({});
 Dark.args = {};
-Dark.decorators = [
-    ThemeDecorator(Theme.DARK),
-    StoreDecorator({
-        user: { authData: undefined },
-    }),
-];
+Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({})];
 
-export const LightLoggedIn = Template.bind({});
-LightLoggedIn.args = {};
-LightLoggedIn.decorators = [
-    StoreDecorator({
-        user: { authData: { id: '1', username: 'admin' } },
-    }),
-];
-
-export const DarkLoggedIn = Template.bind({});
-DarkLoggedIn.args = {};
-DarkLoggedIn.decorators = [
-    ThemeDecorator(Theme.DARK),
-    StoreDecorator({
-        user: { authData: { id: '1', username: 'admin' } },
-    }),
-];
+export const AuthNavbar = Template.bind({});
+AuthNavbar.args = {};
+AuthNavbar.decorators = [StoreDecorator({
+    user: { authData: {} },
+})];
