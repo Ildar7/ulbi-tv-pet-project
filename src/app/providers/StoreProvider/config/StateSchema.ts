@@ -6,9 +6,10 @@ import { CombinedState } from 'redux';
 import { AxiosInstance } from 'axios';
 import { NavigateOptions } from 'react-router';
 import { To } from 'react-router-dom';
-import { ProfileSchema } from '../../../../entities/Profile/index';
-import { CounterSchema } from '../../../../entities/Counter/index';
-import { UserSchema } from '../../../../entities/User/index';
+import { ArticleDetailsSchema } from 'entities/Article';
+import { CounterSchema } from 'entities/Counter';
+import { UserSchema } from 'entities/User';
+import { ProfileSchema } from 'entities/Profile';
 
 export interface StateSchema {
     counter: CounterSchema;
@@ -17,6 +18,7 @@ export interface StateSchema {
     // Асинхронные редюсеры
     loginForm?: LoginSchema;
     profile?: ProfileSchema;
+    articleDetails?: ArticleDetailsSchema;
 }
 
 export type StateSchemaKey = keyof StateSchema;
