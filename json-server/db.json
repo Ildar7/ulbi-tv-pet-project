@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -100,6 +102,36 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123asdasdsa",
+      "id": "SkC3JqY"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "asdsadsad123",
+      "id": "KjdLgPg"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "asasdas",
+      "id": "JZLs0yG"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "фхых1=х231",
+      "id": "1gMgFDW"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "12312321321",
+      "id": "gROBM98"
     }
   ],
   "users": [
@@ -118,14 +150,28 @@
       "avatar": "https://yandex-images.clstorage.net/5yUMb3179/653cfaF_sm/nOHwpDsrinF6VVFvwr3Y41LSRxwo2hjDZVuNMe1QvaeFoqjO1sN6nJEMaSFzdpSkkbRs5GplxKtIn9VolxXtdt-ysfB5dc1xf0EaZY6n1PNHnlpfPZgBx2ICgTHROs2E987f_qmzCuveCTMmdG-P5dXeBfwLJZKDKt6TfIlwuwiOyf60MRLLf29lHn3IvNL1W5RoCBG3BJlpSeVK5z_PidLS-PSlnjPJ3RARBXZ648bU2wOQBxSEgxPPoHuBVJEQksTtjzoCzk5IbghTxZD5ykioezAmuAGNX1vmQ_gixLzd2cLAlrg63MEpDjR2fsnG6uwzlhQJgbgZw71CqV-fNYjH15IwP_R5dFMYcfq91sFbin0yKrgznVtb0VLiDsmW3MbhwZOmIcrWBC0vdGXEx-_EFYo8PYihCvmoVYFekQms5uqxCDfWeFRjNV3Mkun0cptOEyqSMq1qSPh4xRbCpPPG8e-Cshnv9hw5EEtQ2f3H-y6XESu-qjDZhnm3eYI_u-nUtgYQ9GVYZTpE4IbN5Xqxai4ajCGeWF7RV-YP5LTE3tHugbc39egHEzB9RuTT9tUghC0yk4gbwLdztFuFAoDm8qoTE9J2fUg0Q8CiycJiqkUJCIIEtGtl11D6McmK-vj16ZmVKt3VIS8PYXDH2OPNIpsrKYe7KeCndLZrsgy-9veKPTDuTFlHF1XInunMb455GyqSAI5cbfJm4QD_rMzoyOmFvi_H1yQLO19Z2Pro5R2TJBSbrwfGslO3b5sCufL2sCYQ7XR9XBJ3wYTO81qNYTs9nyGsTWb1bfog6KL69OLPqoM6ze8RMhV5Y_PQ2tYushguorsdypBbjlKsMYPQ1YIQPd11Z2sOY_Gaxv5ghUIYEZobrmZK02H5MOmv0tT14YOFItXuHT8VVkX7-fXKCrI5HoihOM2NUYN2niGozfCrGjbLe2ZANHrGu-7Kc6Z_CwqYHrNKZdZk3y8"
     }
   ],
-  "profile": {
-    "first": "Ильдар",
-    "lastname": "Валиев",
-    "age": 20,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Kazaaaan",
-    "username": "admin",
-    "avatar": "https://avatars.mds.yandex.net/get-yapic/23186/Y5z4VXlM9Zfn6bNG1QZD8HjFg-1/islands-retina-middle"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Ильдар",
+      "lastname": "Валиев",
+      "age": 21,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Kazaaaan",
+      "username": "admin",
+      "avatar": "https://avatars.mds.yandex.net/get-yapic/23186/Y5z4VXlM9Zfn6bNG1QZD8HjFg-1/islands-retina-middle"
+    },
+    {
+      "id": "2",
+      "first": "dddsss",
+      "lastname": "sss",
+      "age": 22,
+      "currency": "USD",
+      "country": "USA",
+      "city": "Washington",
+      "username": "user",
+      "avatar": "https://yandex-images.clstorage.net/5yUMb3179/653cfaF_sm/nOHwpDsrinF6VVFvwr3Y41LSRxwo2hjDZVuNMe1QvaeFoqjO1sN6nJEMaSFzdpSkkbRs5GplxKtIn9VolxXtdt-ysfB5dc1xf0EaZY6n1PNHnlpfPZgBx2ICgTHROs2E987f_qmzCuveCTMmdG-P5dXeBfwLJZKDKt6TfIlwuwiOyf60MRLLf29lHn3IvNL1W5RoCBG3BJlpSeVK5z_PidLS-PSlnjPJ3RARBXZ648bU2wOQBxSEgxPPoHuBVJEQksTtjzoCzk5IbghTxZD5ykioezAmuAGNX1vmQ_gixLzd2cLAlrg63MEpDjR2fsnG6uwzlhQJgbgZw71CqV-fNYjH15IwP_R5dFMYcfq91sFbin0yKrgznVtb0VLiDsmW3MbhwZOmIcrWBC0vdGXEx-_EFYo8PYihCvmoVYFekQms5uqxCDfWeFRjNV3Mkun0cptOEyqSMq1qSPh4xRbCpPPG8e-Cshnv9hw5EEtQ2f3H-y6XESu-qjDZhnm3eYI_u-nUtgYQ9GVYZTpE4IbN5Xqxai4ajCGeWF7RV-YP5LTE3tHugbc39egHEzB9RuTT9tUghC0yk4gbwLdztFuFAoDm8qoTE9J2fUg0Q8CiycJiqkUJCIIEtGtl11D6McmK-vj16ZmVKt3VIS8PYXDH2OPNIpsrKYe7KeCndLZrsgy-9veKPTDuTFlHF1XInunMb455GyqSAI5cbfJm4QD_rMzoyOmFvi_H1yQLO19Z2Pro5R2TJBSbrwfGslO3b5sCufL2sCYQ7XR9XBJ3wYTO81qNYTs9nyGsTWb1bfog6KL69OLPqoM6ze8RMhV5Y_PQ2tYushguorsdypBbjlKsMYPQ1YIQPd11Z2sOY_Gaxv5ghUIYEZobrmZK02H5MOmv0tT14YOFItXuHT8VVkX7-fXKCrI5HoihOM2NUYN2niGozfCrGjbLe2ZANHrGu-7Kc6Z_CwqYHrNKZdZk3y8"
+    }
+  ]
 }

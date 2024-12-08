@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { memo } from 'react';
+import { memo, useCallback } from 'react';
 import { ArticleDetails } from 'entities/Article';
 import { useParams } from 'react-router-dom';
 import { Text } from 'shared/ui/Text/Text';
@@ -12,6 +12,8 @@ import {
     fetchCommentsByArticleId,
 } from 'pages/ArticleDetailsPage/model/services/fetchCommentsByArticleId/fetchCommentsByArticleId';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { AddCommentForm } from 'features/AddCommentForm';
+import { addCommentForArticle } from 'pages/ArticleDetailsPage/model/services/addCommentForArticle/addCommentForArticle';
 import cls from './ArticleDetailsPage.module.scss';
 import { articleDetailsCommentsReducer, getArticleComments } from '../../model/slices/articleDetailCommentsSlice';
 import { getArticleCommentsIsLoading } from '../../model/selectors/comments';
@@ -25,11 +27,15 @@ const reducers: ReducersList = {
 };
 
 const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
-    const { t } = useTranslation('articleDetails');
+    const { t } = useTranslation('article-details');
     const { id } = useParams<{id: string}>();
     const comments = useSelector(getArticleComments.selectAll);
     const commentsIsLoading = useSelector(getArticleCommentsIsLoading);
     const dispatch = useAppDispatch();
+
+    const onSendComment = useCallback((text: string) => {
+        dispatch(addCommentForArticle(text));
+    }, [dispatch]);
 
     useInitialEffect(() => {
         dispatch(fetchCommentsByArticleId(id));
@@ -48,6 +54,7 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
             <div className={classNames('', {}, [className])}>
                 <ArticleDetails id={id} />
                 <Text title={t('Комментарии')} className={cls.commentTitle} />
+                <AddCommentForm onSendComment={onSendComment} />
                 <CommentList
                     comments={comments}
                     isLoading={commentsIsLoading}
