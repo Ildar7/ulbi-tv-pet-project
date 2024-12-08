@@ -87,19 +87,19 @@
       "id": "1",
       "text": "some comment 1",
       "articleId": "1",
-      "postId": "1"
+      "userId": "1"
     },
     {
       "id": "2",
       "text": "some comment 2",
       "articleId": "1",
-      "postId": "1"
+      "userId": "1"
     },
     {
       "id": "3",
       "text": "some comment 3",
       "articleId": "1",
-      "postId": "1"
+      "userId": "1"
     }
   ],
   "users": [
@@ -107,13 +107,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://avatars.mds.yandex.net/get-yapic/23186/Y5z4VXlM9Zfn6bNG1QZD8HjFg-1/islands-retina-middle"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://yandex-images.clstorage.net/5yUMb3179/653cfaF_sm/nOHwpDsrinF6VVFvwr3Y41LSRxwo2hjDZVuNMe1QvaeFoqjO1sN6nJEMaSFzdpSkkbRs5GplxKtIn9VolxXtdt-ysfB5dc1xf0EaZY6n1PNHnlpfPZgBx2ICgTHROs2E987f_qmzCuveCTMmdG-P5dXeBfwLJZKDKt6TfIlwuwiOyf60MRLLf29lHn3IvNL1W5RoCBG3BJlpSeVK5z_PidLS-PSlnjPJ3RARBXZ648bU2wOQBxSEgxPPoHuBVJEQksTtjzoCzk5IbghTxZD5ykioezAmuAGNX1vmQ_gixLzd2cLAlrg63MEpDjR2fsnG6uwzlhQJgbgZw71CqV-fNYjH15IwP_R5dFMYcfq91sFbin0yKrgznVtb0VLiDsmW3MbhwZOmIcrWBC0vdGXEx-_EFYo8PYihCvmoVYFekQms5uqxCDfWeFRjNV3Mkun0cptOEyqSMq1qSPh4xRbCpPPG8e-Cshnv9hw5EEtQ2f3H-y6XESu-qjDZhnm3eYI_u-nUtgYQ9GVYZTpE4IbN5Xqxai4ajCGeWF7RV-YP5LTE3tHugbc39egHEzB9RuTT9tUghC0yk4gbwLdztFuFAoDm8qoTE9J2fUg0Q8CiycJiqkUJCIIEtGtl11D6McmK-vj16ZmVKt3VIS8PYXDH2OPNIpsrKYe7KeCndLZrsgy-9veKPTDuTFlHF1XInunMb455GyqSAI5cbfJm4QD_rMzoyOmFvi_H1yQLO19Z2Pro5R2TJBSbrwfGslO3b5sCufL2sCYQ7XR9XBJ3wYTO81qNYTs9nyGsTWb1bfog6KL69OLPqoM6ze8RMhV5Y_PQ2tYushguorsdypBbjlKsMYPQ1YIQPd11Z2sOY_Gaxv5ghUIYEZobrmZK02H5MOmv0tT14YOFItXuHT8VVkX7-fXKCrI5HoihOM2NUYN2niGozfCrGjbLe2ZANHrGu-7Kc6Z_CwqYHrNKZdZk3y8"
     }
   ],
   "profile": {
